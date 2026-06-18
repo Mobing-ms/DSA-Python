@@ -1,3 +1,5 @@
+#Printing alternate integers from a list eg: numbers of index 0,3,5...
+
 class Solution:
     def getAlternates(self, arr):
         new_list = arr[::2]

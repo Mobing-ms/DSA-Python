@@ -1,3 +1,5 @@
+#reversing a list without using functions and slicing technique...
+
 class Solution:
     def reverse_list(self,arr):
         new_list = []

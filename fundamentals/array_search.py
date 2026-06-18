@@ -1,3 +1,5 @@
+#searching an element in an array
+
 class Solution:
     def search(self, arr, x):
         count = 0

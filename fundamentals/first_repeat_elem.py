@@ -1,3 +1,10 @@
+"""
+Given an array arr[], find the first repeating element index. 
+The element should occur more than once and the index of its first occurrence should be the smallest.
+
+Note:- The position you return should be according to 1-based indexing.
+"""
+
 class Solution:
     def firstRepeated(self,arr):
         temp = arr[0]

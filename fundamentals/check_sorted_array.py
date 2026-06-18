@@ -1,3 +1,5 @@
+#checking if an array is already sorted
+
 class Solution:
     def isSorted(self, arr):
         
