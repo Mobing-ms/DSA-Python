@@ -1,7 +1,7 @@
 class Solution:
     def largest_element(self,arr):
         if len(arr) >= 2:
-            temp = 0
+            temp = arr[0]
             for i in range(len(arr)):
                 if (temp <= arr[i]):
                     temp = arr[i]
