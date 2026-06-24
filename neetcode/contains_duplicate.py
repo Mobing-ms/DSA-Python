@@ -1,9 +1,11 @@
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        temp = 0
+        seen = set()
         for i in range(len(nums)):
-            if nums.count(nums[i]) >= 2:
-                return True  
+            if nums[i] in seen:
+                return True
+            else:
+                seen.add(nums[i])
         else:
             return False
         
