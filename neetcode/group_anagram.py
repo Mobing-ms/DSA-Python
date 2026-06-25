@@ -1,16 +1,11 @@
-from collections import Counter
+from collections import Counter, defaultdict
 
 class Solution:
     def groupAnagrams(self, strs):
-        count = []
-        new_list = []
-        for i,word in enumerate(strs):
-            count[i] = Counter(word)
-        
-        return count
+        groups = defaultdict(list)
 
-sol = Solution()
-out_list = sol.groupAnagrams(['eat' ,'ate' ,'akshay' ,'sachu'])
-print(out_list)
+        for word in strs:
+            key = tuple(sorted(Counter(word).items()))
+            groups[key].append(word)
 
-
+        return list(groups.values())
