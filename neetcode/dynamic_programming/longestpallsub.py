@@ -1,3 +1,17 @@
+"""
+
+DP tabulation intialization
+         b b b a b 
+       b 1 0 0 0 0
+       b 0 1 0 0 0
+       b 0 0 1 0 0
+       a 0 0 0 1 0
+       b 0 0 0 0 1
+
+"""
+
+
+
 class Solution:
     def longestPalindromeSubseq(self, s: str) -> int:
         n = len(s)
